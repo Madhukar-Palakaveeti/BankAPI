@@ -13,7 +13,7 @@ def home(request):
     '''
     data = {
         "instructions" : "Three endpoints",
-        "endpoints" : ["/api/get-banks", "api/get-branch-by-ifsc/ifsc"
+        "endpoints" : ["/api/get-banks", "api/get-branch-by-ifsc/ifsc",
                        "api/get-branch-by-search?search=<your_search_term"],
         "options" : "fields available for third endpoint - ['branch','city','district','state','bank_name']",
         }
