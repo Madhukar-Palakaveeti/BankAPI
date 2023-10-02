@@ -11,11 +11,12 @@ This Api contains routes to retrieve bank details like ifsc, branch and other th
 This Api contains three endpoints :
  - /api/get-banks/ : Lists all the banks available.
  - /api/get-branch-by-ifsc/<ifsc> : Retrieves the details of given ifsc branch
- - /api/get-branch-by-search : This endpoint accepts query parameters from users. Two options are available:
-                               1. search - query parameter - useful when user have a vague search term not exact
-                                                              Eg : /api/get-branch-by-search?search=andhra
-                               2. field_name - In this option, the user can filter the branch by giving the exact
-                                                field name . Eg : /api/get-branch-by-search?branch=KANJUR
+ - /api/get-branch-by-search : This endpoint accepts query parameters from users.
+ - Two options are available:
+   1. search - query parameter - useful when user have a vague search term not exact
+   Eg : /api/get-branch-by-search?search=andhra
+   2. field_name - In this option, the user can filter the branch by giving the exact field name .
+   Eg : /api/get-branch-by-search?branch=KANJUR
 
 Data is available in the form of an SQL Dump at [this repo](https://github.com/Amanskywalker/indian_banks).
 
