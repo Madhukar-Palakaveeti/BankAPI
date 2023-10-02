@@ -1,8 +1,23 @@
-from rest_framework import filters
+from rest_framework import filters,status
 from api.models import Banks, EasyView
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from api.serializers import BankViewSerializer, BankBranchesSerializer
 from django_filters.rest_framework import DjangoFilterBackend
+from django.http import JsonResponse
+
+
+
+def home(request):
+    '''
+        Home View
+    '''
+    data = {
+        "instructions" : "Three endpoints",
+        "endpoints" : ["/api/get-banks", "api/get-branch-by-ifsc/ifsc"
+                       "api/get-branch-by-search?search=<your_search_term"],
+        "options" : "fields available for third endpoint - ['branch','city','district','state','bank_name']",
+        }
+    return JsonResponse(data=data, status=status.HTTP_200_OK)
 
 
 '''
