@@ -1,4 +1,4 @@
-# Advertyzement Assignment
+
 This repo contains a Python/Django REST API which retrieves banks details based on user's queries.
 
 
